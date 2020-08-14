@@ -21,7 +21,7 @@ class Show extends Component {
       <li>
         <Link to={`/show/${this.props.id}`}>
           <h1>Name: {this.props.name}</h1>
-          <img src={this.props.image.medium}></img>
+          <img  loading="lazy" src={this.props.image.medium}></img>
         </Link>
         <p>{this.props.language}</p>
         <p>{this.props.premiered}</p>

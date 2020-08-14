@@ -3,7 +3,9 @@ body {
 }
 #root {
   display: flex;
+  flex-direction: column;
   font-weight: bold;
   padding: 5px;
   font-size: 2vw;
 }
+
