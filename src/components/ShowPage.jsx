@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { getShow } from "../api/show";
 import Show from "./Show";
-import withDays from "../HOC/withDaysFromPremiere"
 
 
 class ShowPage extends Component {

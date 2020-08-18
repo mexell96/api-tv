@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import withDays from "../HOC/withDaysFromPremiere";
 import "./style.css"
 
-class Show extends Component {
+class Show2 extends Component {
   static propTypes = {
     name: PropTypes.string.isRequired,
     officialSite: PropTypes.string.isRequired,
@@ -28,12 +28,16 @@ class Show extends Component {
       <li>
         <Link to={`/show/${this.props.id}`}>
           <h1>Name: {this.props.name}</h1>
+          <p className="site"> OfficialSite: <br></br> {this.props.officialSite}</p>
           <img  loading="lazy" src={this.props.image.medium}></img>
         </Link>
+        <p>{this.props.language}</p>
         <p>Rating: {this.props.rating.average}</p>
+        <p>{this.props.premiered}</p>
+        <p>days from premier: {this.props.daysFromPremiere}</p>
       </li>
     );
   }
 }
 
-export default  withDays(Show);
+export default  withDays(Show2);
