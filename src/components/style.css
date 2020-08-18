@@ -24,6 +24,10 @@ p {
   font-family: "Open Sans", sans-serif;
   font-size: 1vw;
 }
+.site {
+  color: black;
+  font-size: 0.6vw;
+}
 img {
   max-width: 100%;
   height: auto;

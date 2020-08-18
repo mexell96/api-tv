@@ -23,11 +23,7 @@ export default class ShowList extends Component {
               key={show.id} 
               name={show.name} 
               officialSite={show.officialSite}
-              image={show.image}
-              language={show.language}
-              rating={show.rating}
-              premiered={show.premiered}
-              id={show.id}
+              
             />
           )) 
           : "Loading..."}
