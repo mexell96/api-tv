@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import withDays from "../HOC/withDaysFromPremiere";
-import "./style.css"
+
 
 class Show2 extends Component {
   static propTypes = {
@@ -25,16 +25,16 @@ class Show2 extends Component {
   render() {
     console.log(this.props.daysFromPremiere);
     return (
-      <li>
+      <li style={{width: '35%'}}>
         <Link to={`/show/${this.props.id}`}>
-          <h1>Name: {this.props.name}</h1>
-          <p className="site"> OfficialSite: <br></br> {this.props.officialSite}</p>
-          <img  loading="lazy" src={this.props.image.medium}></img>
+          <h1 style={{fontSize: '2.5vw'}}>Name: {this.props.name}</h1>
+          <p className="site" style={{fontSize: '1vw'}}> OfficialSite: <br></br> {this.props.officialSite}</p>
+          <img  loading="lazy" src={this.props.image.original}></img>
         </Link>
-        <p>{this.props.language}</p>
-        <p>Rating: {this.props.rating.average}</p>
-        <p>{this.props.premiered}</p>
-        <p>days from premier: {this.props.daysFromPremiere}</p>
+        <p style={{fontSize: '2vw'}}>{this.props.language}</p>
+        <p style={{fontSize: '2vw'}}>Rating: {this.props.rating.average}</p>
+        <p style={{fontSize: '2vw'}}>{this.props.premiered}</p>
+        <p style={{fontSize: '2vw'}}>days from premier: {this.props.daysFromPremiere}</p>
       </li>
     );
   }

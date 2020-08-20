@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import { getShows } from "../api/show";
 import Show from "./Show";
-import "./style.css";
+
 
 export default class ShowList extends Component {
   state = {
